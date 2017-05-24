@@ -57,7 +57,8 @@ def loadSkin(name, scope = SCOPE_SKIN):
 
 # example: loadSkin("nemesis_greenline/skin.xml")
 config.skin = ConfigSubsection()
-config.skin.primary_skin = ConfigText(default = "Vu_HD/skin.xml")
+config.skin.primary_skin = ConfigText(default = "MX_HQ10/skin.xml")
+config.skin.xres = ConfigInteger(default = 0)
 
 profile("LoadSkin")
 try:
@@ -417,6 +418,7 @@ def loadSingleSkinData(desktop, skin, path_prefix):
 				else:
 					bpp = 32
 				#print "Resolution:", xres,yres,bpp
+				config.skin.xres.value = xres
 				from enigma import gMainDC
 				gMainDC.getInstance().setResolution(xres, yres)
 				desktop.resize(eSize(xres, yres))
