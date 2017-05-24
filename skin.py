@@ -6,7 +6,7 @@ from os import path
 profile("LOAD:enigma_skin")
 from enigma import eSize, ePoint, gFont, eWindow, eLabel, ePixmap, eWindowStyleManager, \
 	addFont, gRGB, eWindowStyleSkinned
-from Components.config import ConfigSubsection, ConfigText, config
+from Components.config import ConfigSubsection, ConfigText, config, ConfigInteger
 from Components.Converter.Converter import Converter
 from Components.Sources.Source import Source, ObsoleteSource
 from Tools.Directories import resolveFilename, SCOPE_SKIN, SCOPE_SKIN_IMAGE, SCOPE_FONTS, SCOPE_CURRENT_SKIN, SCOPE_CONFIG, fileExists
