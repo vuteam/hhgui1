@@ -13,18 +13,18 @@ void eEnv::initialize()
 		std::string name;
 		std::string value;
 	} cfgenv[] = {
-		{ "prefix", "@prefix@" },
-		{ "exec_prefix", "@exec_prefix@" },
-		{ "bindir", "@bindir@" },
-		{ "sbindir", "@sbindir@" },
-		{ "libexecdir", "@libexecdir@" },
-		{ "datarootdir", "@datarootdir@" },
-		{ "datadir", "@datadir@" },
-		{ "sysconfdir", "@sysconfdir@" },
-		{ "sharedstatedir", "@sharedstatedir@" },
-		{ "localstatedir", "@localstatedir@" },
-		{ "libdir", "@libdir@" },
-		{ "localedir", "@localedir@" },
+		{ "prefix", "/usr" },
+		{ "exec_prefix", "/usr" },
+		{ "bindir", "/usr/bin" },
+		{ "sbindir", "/usr/sbin" },
+		{ "libexecdir", "/usr/lib/enigma2" },
+		{ "datarootdir", "${prefix}/share" },
+		{ "datadir", "/usr/share" },
+		{ "sysconfdir", "/etc" },
+		{ "sharedstatedir", "/com" },
+		{ "localstatedir", "/var" },
+		{ "libdir", "/usr/lib" },
+		{ "localedir", "${datarootdir}/locale" },
 	};
 	size_t i;
 
